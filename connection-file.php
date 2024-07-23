@@ -8,7 +8,7 @@ header('Access-Control-Allow-Headers: Content-Type, Authorization');
 $servername="localhost";
 $user="root";
 $password="";
-$db_name="restaurant_db";
+$db_name="recipe_managment-db";
 
 $conn = new mysqli($servername,$user,$password,$db_name);
 
