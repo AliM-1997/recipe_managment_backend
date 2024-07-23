@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $recipe_name = $data['name'];
         $description= $data['description'];
         $ingredients=$data['ingredients'];
-        print_r ($data);
+        // print_r ($data);
 
         $stm = $conn->prepare("select * from recipes where name = ?;");
         $stm->bind_param("s", $recipe_name);

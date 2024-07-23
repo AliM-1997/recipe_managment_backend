@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $data = json_decode(file_get_contents('php://input'), true);
     if (isset($data["name"])) {
         $recipe_name=$data["name"];
-        print_r ($data);
+        // print_r ($data);
     $stm=$conn->prepare("select * from recipes where name=?");
     $stm->bind_param("s",$recipe_name);
     $stm->execute();
